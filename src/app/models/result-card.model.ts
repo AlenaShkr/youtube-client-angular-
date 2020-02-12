@@ -13,17 +13,17 @@ interface Thumbnails {
 }
 
 interface Snippet {
-  publishedAt: Date;
+  publishedAt: string;
   title: string;
   description: string ;
   thumbnails: Thumbnails;
 }
 
 interface Statistics {
-  viewCount: number;
-  likeCount: number;
-  dislikeCount: number;
-  commentCount: number;
+  viewCount: string;
+  likeCount: string;
+  dislikeCount: string;
+  commentCount: string;
 }
 
 export interface ResultCard {
