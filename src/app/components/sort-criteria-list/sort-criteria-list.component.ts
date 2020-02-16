@@ -8,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 export class SortCriteriaListComponent implements OnInit {
 
   constructor() { }
-
+  link: string[] = ['name', 'count of view', '1'];
   public ngOnInit(): void {
   }
 

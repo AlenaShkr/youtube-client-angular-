@@ -1,0 +1,25 @@
+.mat-nav-list {
+  display: flex;
+  flex-direction: row;
+}
+.filter-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+
+  margin: 0px;
+  padding-left: 0px;
+
+  text-decoration: underline;
+}
+.filter-input {
+  margin-left: 5px;
+  border: 0px;
+}
+.mat-line {
+  color: blue;
+  margin-left: 8px;
+}
+
+

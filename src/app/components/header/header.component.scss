@@ -1,0 +1,35 @@
+app-search-request {
+  width: 40%;
+  height: 5vh;
+  margin: 0px 5%;
+}
+.mat-raised-button {
+  width: 24px;
+  height: 5vh;
+
+  background-image: url(../../../assets/icon/filter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 25%;
+  background-color: #2f80ed;
+}
+
+.login-name {
+  margin-left: 10%;
+  align-items: right;
+}
+
+.login-button {
+  width: 24px;
+  height: 5vh;
+  background-image: url(../../../assets/icon/Subtract.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+app-sort-criteria-list {
+  width: 50%;
+
+  padding-right: 12%;
+  padding-bottom: 2%;
+}
