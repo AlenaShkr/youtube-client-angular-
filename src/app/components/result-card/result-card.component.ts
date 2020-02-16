@@ -9,7 +9,7 @@ import { ResultCard } from '../../models/result-card.model';
 export class ResultCardComponent implements OnInit {
   public resultCard: ResultCard;
 
-  constructor() { }
+  constructor() { };
 
   public ngOnInit(): void {
   }

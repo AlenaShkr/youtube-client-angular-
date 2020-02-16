@@ -1,6 +1,6 @@
 <img src= '{{ urlLogo }}' alt="youtube-client">
 <app-search-request></app-search-request>
-<button mat-raised-button color="acent" >
+<button mat-raised-button color="acent" (click)="handleClick($event)">
 </button>
   <span class="login-name">Your name</span>
   <button mat-button class="login-button">
