@@ -13,4 +13,8 @@ export class SearchRequestComponent implements OnInit {
   public ngOnInit(): void {
   }
 
+  handleClick(event: MouseEvent | Event) {
+    console.log(event);
+  }
+
 }
