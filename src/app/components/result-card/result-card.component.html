@@ -1,1 +1,32 @@
-<p>result-card works!</p>
+
+<mat-card class="card">
+
+  <img mat-card-image src="{{urlPhoto}}" alt="Photo video">
+
+  <mat-card-content>
+
+    <div class="count-of-view">
+      <mat-icon aria-hidden="false" aria-label="Example favorite icon">visibility</mat-icon>
+      {{view}}356
+    </div>
+    <div class="likes">
+      <mat-icon aria-hidden="false" aria-label="Example favorite icon">favorite</mat-icon>
+      {{likes}}365
+    </div>
+    <div class="dislikes">
+      <mat-icon aria-hidden="false" aria-label="Example favorite icon">favorite</mat-icon>
+      {{dislikes}}356
+    </div>
+    <div class="comments">
+      <mat-icon aria-hidden="false" aria-label="Example favorite icon">comments</mat-icon>
+      {{comments}}356
+    </div>
+  </mat-card-content>
+  <mat-card-title>glkjbjblfxjljljglb</mat-card-title>
+  <mat-card-actions>
+    <button mat-button>Read more...</button>
+    <p class="description" [ngStyle]="{'display':'none'}">
+      {{description}}
+    </p>
+  </mat-card-actions>
+</mat-card>

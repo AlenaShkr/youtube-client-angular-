@@ -9,3 +9,17 @@ app-header {
   width: 100%;
   padding-top: 2%;
 }
+
+app-search-result {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  width: 80%;
+  height: 70vh;
+  margin: 20px auto;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
