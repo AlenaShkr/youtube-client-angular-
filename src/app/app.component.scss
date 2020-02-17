@@ -11,15 +11,20 @@ app-header {
 }
 
 app-search-result {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+  //display: flex;
+  //flex-direction: row;
+  //justify-content: space-between;
+  //align-items: center;
+  //flex-wrap: wrap;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 10px;
 
   width: 80%;
   height: 70vh;
   margin: 20px auto;
   overflow-y: scroll;
-  overflow-x: hidden;
+  overflow-x: auto;
 }

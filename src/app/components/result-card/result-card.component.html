@@ -1,29 +1,27 @@
 
 <mat-card class="card">
-  <img mat-card-image src="{{urlPhoto}}" alt="Photo video">
+  <img mat-card-image src="{{card.snippet.thumbnails.default.url}}"
+  alt="Photo video">
   <mat-card-content>
     <div class="count-of-view">
       <mat-icon aria-hidden="false" aria-label="eye icon">visibility</mat-icon>
-      {{view}}356
+      {{card.statistics.viewCount}}
     </div>
     <div class="likes">
       <mat-icon aria-hidden="false" aria-label="favorite icon">favorite</mat-icon>
-      {{likes}}365
+      {{card.statistics.likeCount}}
     </div>
     <div class="dislikes">
       <mat-icon aria-hidden="false" aria-label="dislike icon">favorite</mat-icon>
-      {{dislikes}}356
+      {{card.statistics.dislikeCount}}
     </div>
     <div class="comments">
       <mat-icon aria-hidden="false" aria-label="comment icon">comments</mat-icon>
-      {{comments}}356
+      {{card.statistics.commentCount}}
     </div>
   </mat-card-content>
-  <mat-card-title>glkjbjblfxjljljglb</mat-card-title>
+  <mat-card-title>{{card.snippet.title}}</mat-card-title>
   <mat-card-actions>
     <button mat-button>Read more...</button>
-    <p class="description" [ngStyle]="{'display':'none'}">
-      {{description}}
-    </p>
   </mat-card-actions>
 </mat-card>
