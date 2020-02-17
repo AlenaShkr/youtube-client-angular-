@@ -9,9 +9,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   urlLogo: string = '../../assets/icon/logo.svg';
-  hide: boolean = true;
+  isShowCriteriaBlock: boolean = true;
   public handleClick(): void {
-    this.hide = !this.hide;
+    this.isShowCriteriaBlock = !this.isShowCriteriaBlock;
   }
 
   public ngOnInit(): void {
