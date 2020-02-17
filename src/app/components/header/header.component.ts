@@ -9,8 +9,9 @@ export class HeaderComponent implements OnInit {
   constructor() { }
 
   urlLogo: string = '../../assets/icon/logo.svg';
-  public handleClick(event: Event): void {
-    console.log('hi');
+  hide: boolean = true;
+  public handleClick(): void {
+    this.hide = !this.hide;
   }
 
   public ngOnInit(): void {
