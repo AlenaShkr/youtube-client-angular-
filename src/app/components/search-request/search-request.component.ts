@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import * as dataFile from '../../../assets/data/data.json';
 
 @Component({
   selector: 'app-search-request',
@@ -7,14 +8,14 @@ import { Component, OnInit } from '@angular/core';
 })
 
 export class SearchRequestComponent implements OnInit {
-
+  public data: Object[] = dataFile.items;
   constructor() { }
 
   public ngOnInit(): void {
   }
 
-  handleClick(event: MouseEvent | Event) {
-    console.log(event);
+  handleClick(valueRequest: string): Object[] {
+    return this.data;
   }
 
 }

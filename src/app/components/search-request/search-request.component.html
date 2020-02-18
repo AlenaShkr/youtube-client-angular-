@@ -1,5 +1,11 @@
 <form>
-    <input matInput type="search" placeholder="Please, enter">
-    <button mat-button type="submit" class="header-request" (click)="handleCllick($event)">Search</button>
+    <input matInput type="search"
+    name="request"
+    [ngModel]="request"
+    #valueRequestInput="ngModel"
+    placeholder="Please, enter">
+    <button mat-button type="submit"
+    class="header-request"
+    (click)="handleClick(valueRequestInput.value)">Search</button>
 </form>
 

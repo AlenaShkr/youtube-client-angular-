@@ -29,7 +29,6 @@ function defineColor(el: string): string {
   const nowDate: number = Date.now();
   const duration: number = nowDate - publishDateInMilisec;
   const durationDay: number = Math.floor(duration / (1000 * 60 * 60 * 24));
-  console.log(durationDay);
   if (durationDay < 7 ) {
     return 'blue';
   }
