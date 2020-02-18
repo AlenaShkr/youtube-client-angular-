@@ -11,16 +11,10 @@ app-header {
 }
 
 app-search-result {
-  //display: flex;
-  //flex-direction: row;
-  //justify-content: space-between;
-  //align-items: center;
-  //flex-wrap: wrap;
-
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  grid-gap: 10px;
+  grid-gap: 5%;
 
   width: 80%;
   height: 70vh;
