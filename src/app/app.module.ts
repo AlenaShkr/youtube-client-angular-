@@ -15,6 +15,7 @@ import {MatInputModule} from '@angular/material/input';
 import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import { FormsModule }   from '@angular/forms';
+import { BorderColorDirective } from './directives/border-color.directive';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule }   from '@angular/forms';
     ResultCardComponent,
     HeaderComponent,
     SearchRequestComponent,
-    SortCriteriaListComponent
+    SortCriteriaListComponent,
+    BorderColorDirective
   ],
   imports: [
     BrowserModule,
