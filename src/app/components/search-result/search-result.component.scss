@@ -1,7 +1,12 @@
-app-result-card {
-  display: flex;
-  justify-content: center;
-  align-items: stretch;
-  width: 100%;
-  height: 100%;
+:host {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  grid-gap: 5%;
+
+  width: 80%;
+  height: 70vh;
+  margin: 20px auto;
+  overflow-y: scroll;
+  overflow-x: auto;
 }

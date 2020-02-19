@@ -1,7 +1,13 @@
-app-search-request {
-  width: 40%;
-  height: 5vh;
-  margin: 0px 5%;
+:host {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  background: #E5E5E5;
+  width: 100%;
+  padding: 2% 0px;
 }
 
 .mat-raised-button {
