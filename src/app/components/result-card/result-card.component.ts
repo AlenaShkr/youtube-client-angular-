@@ -16,4 +16,3 @@ export class ResultCardComponent implements OnInit {
   public ngOnInit(): void {
   }
 }
-

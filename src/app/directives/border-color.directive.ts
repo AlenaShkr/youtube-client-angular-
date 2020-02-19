@@ -4,22 +4,20 @@ import { Directive, ElementRef, Renderer2, OnChanges, Input } from '@angular/cor
   selector: '[appBorderColor]'
 })
 export class BorderColorDirective implements OnChanges {
-  @Input('appBorderColor') dateData: string;
+  @Input('appBorderColor') public dateData: string;
   public color: string;
 
   constructor(private elementRef: ElementRef, private renderer2: Renderer2) { }
-
-  public ngOnChanges(): void {
-    this.color = defineColor(this.dateData);
-    this.highlight(this.color);
-  }
-
-  private highlight(color: string) {
+  private highlight(color: string): void {
     this.renderer2.setStyle(this.elementRef.nativeElement, 'border-bottom-style', 'solid');
     this.renderer2.setStyle(this.elementRef.nativeElement, 'border-bottom-width', '5px');
     this.renderer2.setStyle(this.elementRef.nativeElement, 'border-bottom-color', color);
   }
 
+  public ngOnChanges(): void {
+    this.color = defineColor(this.dateData);
+    this.highlight(this.color);
+  }
 }
 
 function defineColor(el: string): string {
