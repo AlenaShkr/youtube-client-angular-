@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -6,10 +6,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent implements OnInit {
+  public urlLogo: string = '../../assets/icon/logo.svg';
+  public isShowCriteriaBlock: boolean = true;
+
   constructor() { }
 
-  urlLogo: string = '../../assets/icon/logo.svg';
-  isShowCriteriaBlock: boolean = true;
   public handleClick(): void {
     this.isShowCriteriaBlock = !this.isShowCriteriaBlock;
   }

@@ -7,14 +7,12 @@ import { ResultCard } from '../../models/result-card.model';
   styleUrls: ['./result-card.component.scss'],
 })
 
-
-
 export class ResultCardComponent implements OnInit {
   public resultCard: ResultCard;
   @Input() public card: ResultCard;
   public color: string;
 
-  constructor() { };
+  constructor() { }
 
   public ngOnInit(): void {
     this.color = defineColor(this.card.snippet.publishedAt);
