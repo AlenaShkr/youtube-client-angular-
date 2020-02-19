@@ -7,7 +7,7 @@ import { Component, OnInit, Input } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
   public urlLogo: string = '../../assets/icon/logo.svg';
-  public isShowCriteriaBlock: boolean = true;
+  public isShowCriteriaBlock: boolean = false;
 
   constructor() { }
 

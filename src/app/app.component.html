@@ -1,2 +1,6 @@
-<app-header></app-header>
+<app-header #attrHeader></app-header>
+<app-sort-criteria-list *ngIf="attrHeader.isShowCriteriaBlock">
+</app-sort-criteria-list>
 <app-search-result></app-search-result>
+
+
