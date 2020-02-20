@@ -8,13 +8,14 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 export class HeaderComponent implements OnInit {
   public isShowCriteriaBlock: boolean = false;
   public isClickedButtonSearch: boolean;
-  @Output() clicked = new EventEmitter<boolean>();
+  @Output() public clicked: EventEmitter<boolean> = new EventEmitter<boolean>();
 
-  onClicked($event: Event): void {
+  constructor() { }
+
+  public onClicked($event: Event): void {
     this.clicked.emit();
     this.isClickedButtonSearch = true;
   }
-  constructor() { }
 
   public handleClick(): void {
     this.isShowCriteriaBlock = !this.isShowCriteriaBlock;

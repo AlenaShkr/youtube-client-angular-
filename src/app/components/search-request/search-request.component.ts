@@ -8,7 +8,7 @@ import * as dataFile from '../../../assets/data/data.json';
 })
 
 export class SearchRequestComponent implements OnInit {
-  @Output() clicked = new EventEmitter<boolean>();
+  @Output() public clicked: EventEmitter<boolean> = new EventEmitter<boolean>();
   public data: Object[] = dataFile.items;
 
   constructor() { }
