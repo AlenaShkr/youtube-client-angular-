@@ -1,4 +1,4 @@
-import { Component, OnInit, Input} from '@angular/core';
+import { Component, OnInit, Output, EventEmitter} from '@angular/core';
 import * as dataFile from '../../../assets/data/data.json';
 
 @Component({
@@ -8,7 +8,7 @@ import * as dataFile from '../../../assets/data/data.json';
 })
 
 export class SearchRequestComponent implements OnInit {
-  // @Input() public data1: string = "from request";
+  @Output() clicked = new EventEmitter<boolean>();
   public data: Object[] = dataFile.items;
 
   constructor() { }
@@ -16,7 +16,7 @@ export class SearchRequestComponent implements OnInit {
   public ngOnInit(): void {
   }
 
-  public handleClick(valueRequest: string): Object[] {
-    return this.data;
+  public handleClick(valueRequest: string): void {
+    this.clicked.emit();
   }
 }
