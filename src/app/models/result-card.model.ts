@@ -32,5 +32,4 @@ export interface ResultCard {
   id: string;
   snippet: Snippet;
   statistics: Statistics;
-
 }
